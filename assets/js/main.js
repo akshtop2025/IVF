@@ -272,3 +272,80 @@
   new PureCounter();
 
 })()
+
+
+// Our Doctors slider
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4, // Default number of slides on large screens
+      spaceBetween: 30, // Space between slides
+      breakpoints: {
+          1200: {
+              slidesPerView: 4, // 4 slides on screens wider than 1200px
+          },
+          1024: {
+              slidesPerView: 3, // 3 slides on screens between 1024px and 1200px
+          },
+          768: {
+              slidesPerView: 2, // 2 slides on screens between 768px and 1024px
+          },
+          576: {
+              slidesPerView: 1, // 1 slide on screens between 576px and 768px
+          },
+          480: {
+              slidesPerView: 1, // 1 slide on screens between 480px and 576px
+          },
+          320: {
+              slidesPerView: 1, // 1 slide on screens between 320px and 480px
+          }
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+          delay: 2500, // Delay between slides in milliseconds (e.g., 2500ms = 2.5 seconds)
+          disableOnInteraction: false, // Continue autoplay after user interaction
+      },
+  });
+});
+
+// Doctors slider
+
+// Our IVFs Center
+$(document).ready(function(){
+  $('.slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+});
+// Our IVFs Center

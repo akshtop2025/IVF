@@ -17,7 +17,10 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+ 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -115,7 +118,7 @@
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <div  class="d-flex align-items-center fixed-top">
+  <div class="d-flex align-items-center fixed-top">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="align-items-center d-none d-md-flex">
         <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM
@@ -129,15 +132,15 @@
   <!-- ======= Header ======= -->
   <header class="fixed-top">
     <section class="p-2" style="background-color: #0c6295; color: white;">
-    <div class="container d-flex align-items-center justify-content-center justify-content-md-between" >
-      <div class="align-items-center d-none d-md-flex">
-        <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM
+      <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+        <div class="align-items-center d-none d-md-flex">
+          <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-phone"></i> Call us now +91 90990 74235
+        </div>
       </div>
-      <div class="d-flex align-items-center">
-        <i class="bi bi-phone"></i> Call us now +91 90990 74235
-      </div>
-    </div>
-  </section>
+    </section>
     <!-- <div class="container d-flex align-items-center">
 
       <a href="index.html" class="logo me-auto d-lg-block d-none"><img src="assets/img/logo.png" alt="logo"></a>
@@ -161,12 +164,13 @@
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
       }
     </style>
-    
+
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a href="index.html" class="logo me-auto d-lg-block d-none"><img src="assets/img/logo.png" alt="logo"></a>
-      <a href="index.html" class="logo1 me-auto d-lg-none d-block"><img src="assets/img/logo.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a href="index.html" class="logo1 me-auto d-lg-none d-block"><img src="assets/img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -175,13 +179,14 @@
             <a class="nav-link text-center px-4" href="#about">About</a>
             <a class="nav-link text-center px-4" href="#services">Services</a>
             <a class="nav-link text-center px-4" href="#contact">Contact</a>
-            <a class="nav-link text-center px-4 rounded" style="background-color: #0c6295; color: white;">Inquiry Now</a>
+            <a class="nav-link text-center px-4 rounded" style="background-color: #0c6295; color: white;">Inquiry
+              Now</a>
           </div>
         </div>
       </div>
     </nav>
-    
-</header>
+
+  </header>
 
   <!-- End Header -->
 
@@ -310,7 +315,7 @@
 
         <div class="row no-gutters">
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="my-lg-0 my-md-0 my-2 col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <img src="./assets/img/icons/15+ years of Trust.png" alt=""
                 style="height: 54px; width: 54px; margin-bottom: 5px;">
@@ -319,7 +324,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="my-lg-0 my-md-0 my-2 col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <img src="./assets/img/icons/Modern Infrastructure.png" alt=""
                 style="height: 54px; width: 54px; margin-bottom: 5px;">
@@ -328,7 +333,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="my-lg-0 my-md-0 my-2 col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <img src="./assets/img/icons/Treatment with care.png" alt=""
                 style="height: 54px; width: 54px; margin-bottom: 5px;">
@@ -337,7 +342,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="my-lg-0 my-md-0 my-2 col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <img src="./assets/img/icons/Confidentiality.png" alt=""
                 style="height: 54px; width: 54px; margin-bottom: 5px;">
@@ -362,35 +367,35 @@
                 <img src="./assets/img/Ovum Pickup Techniques (1).png" alt="" style="height: 75px; width: 75px;">
               </div>
               <div class="side-text">
-                <h4>Ovum Pickup Techniques</h4>
-                <p>Advanced methods to safely retrieve eggs for <br> fertility treatments.</p>
+                <h4 class="ms-lg-5 ms-md-5 ms-3">Ovum Pickup Techniques</h4>
+                <p class="ms-lg-5 ms-md-5 ms-3">Advanced methods to safely retrieve eggs for <br class="d-lg-block d-md-none d-none"> fertility treatments.</p>
               </div>
             </div>
-            <div class="icon-box mt-5 mt-lg-0 d-flex">
+            <div class="icon-box my-2 mt-lg-0 d-flex">
               <div class="side-img">
                 <img src="./assets/img/icons/ICSI.png" alt="" style="height: 75px; width: 75px;">
               </div>
               <div class="side-text">
-                <h4>ICSI</h4>
-                <p>A precise procedure where a single sperm is <br> injected directly into an egg.</p>
+                <h4 class="ms-lg-5 ms-md-5 ms-3">ICSI</h4>
+                <p class="ms-lg-5 ms-md-5 ms-3">A precise procedure where a single sperm is <br class="d-lg-block d-md-none d-none"> injected directly into an egg.</p>
               </div>
             </div>
-            <div class="icon-box mt-5 mt-lg-0 d-flex">
+            <div class="icon-box my-2 mt-lg-0 d-flex">
               <div class="side-img">
                 <img src="./assets/img/icons/Embryo Transfer Procedure.png" alt="" style="height: 75px; width: 75px;">
               </div>
               <div class="side-text">
-                <h4>Embryo Transfer Procedure</h4>
-                <p>Carefully place fertilised embryos into the uterus <br> to achieve pregnancy.</p>
+                <h4 class="ms-lg-5 ms-md-5 ms-3">Embryo Transfer Procedure</h4>
+                <p class="ms-lg-5 ms-md-5 ms-3">Carefully place fertilised embryos into the uterus <br class="d-lg-block d-md-none d-none"> to achieve pregnancy.</p>
               </div>
             </div>
-            <div class="icon-box mt-5 mt-lg-0 d-flex">
+            <div class="icon-box my-2 mt-lg-0 d-flex">
               <div class="side-img">
                 <img src="./assets/img/icons/Sperm Analysis.png" alt="" style="height: 75px; width: 75px;">
               </div>
               <div class="side-text">
-                <h4>Sperm Analysis</h4>
-                <p>Comprehensive assessment of sperm health and <br> viability for fertility evaluation.</p>
+                <h4 class="ms-lg-5 ms-md-5 ms-3">Sperm Analysis</h4>
+                <p class="ms-lg-5 ms-md-5 ms-3">Comprehensive assessment of sperm health and <br class="d-lg-block d-md-none d-none"> viability for fertility evaluation.</p>
               </div>
             </div>
           </div>
@@ -413,47 +418,69 @@
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"> <img src="./assets/img/icons/services/IVF Centre.png" alt=""
                 style="height: 64px; width: 64px;"></div>
-            <h4 class="title"><a href="">IVF Centre</a></h4>
+            <h4 class="title">IVF Centre</h4>
             <p class="description">IVF involves the extraction of eggs and retrieving a sperm sample. Egg and sperm are
               then manually combined in the laboratory, after which the embryo is sent to the uterus.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon"> <img src="./assets/img/icons/services/IUI Centre.png" alt=""
                 style="height: 64px; width: 64px;"></div>
-            <h4 class="title"><a href="">IUI Centre</a></h4>
+            <h4 class="title">IUI Centre</h4>
             <p class="description">IUI is a part of fertilisation treatment in which sperm is washed in a Laboratory.
               Then, concentrated sperm is washed with good Motility and inserted into the uterus.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"> <img src="./assets/img/icons/services/Surrogacy.png" alt=""
                 style="height: 64px; width: 64px;"></div>
-            <h4 class="title"><a href="">Surrogacy</a></h4>
+            <h4 class="title">Surrogacy</h4>
             <p class="description">Surrogacy is an arrangement often supported by a legal agreement whereby a woman
               agrees to become pregnant, carry the pregnancy to due term, and give birth to a child.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon"> <img src="./assets/img/icons/services/Embryo Biopsy.png" alt=""
                 style="height: 64px; width: 64px;"></div>
-            <h4 class="title"><a href="">Embryo Biopsy</a></h4>
+            <h4 class="title">Embryo Biopsy</h4>
             <p class="description">Cells are retrieved from a developing embryo on day 3 or day 5 (Blastocyst) and
               diagnosed for genetic disorders in a lab. Only genetically normal embryos are selected for transfer.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon"> <img src="./assets/img/icons/services/Male Infertility.png" alt=""
                 style="height: 64px; width: 64px;"></div>
-            <h4 class="title"><a href="">Male Infertility</a></h4>
-            <p class="description">Male Infertility could be a result of abnormal sperm function, insufficient sperm
-              production, or even blockages that might prevent sperm delivery.</p>
+            <h4 class="title">Male Infertility</h4>
+            <p class="description">Male infertility can be caused by problems with sperm function, production, or
+              delivery. Advanced treatments like TESA, MESA, and Micro TESE can help men with severe infertility.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"> <img src="./assets/img/icons/services/ERA-EndometrialReceptivityArray.png" alt=""
+                style="height: 64px; width: 64px;"></div>
+            <h4 class="title">ERA - Endometrial Receptivity Array</h4>
+            <p class="description">A test used to determine the optimal timing for embryo implantation in IVF. It
+              analyzes the endometrial lining to identify the best time for embryo transfer.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"> <img src="./assets/img/icons/services/Egg Freezing.png" alt=""
                 style="height: 64px; width: 64px;"></div>
-            <h4 class="title"><a href="">Egg Freezing</a></h4>
+            <h4 class="title">Egg Freezing</h4>
             <p class="description">Egg freezing allows women to preserve their fertility, offering flexibility for
               future family planning. This advanced procedure ensures the highest standards of care and success.</p>
           </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"> <img src="./assets/img/icons/services/SpermFreezing.png" alt=""
+                style="height: 64px; width: 64px;"></div>
+            <h4 class="title">Sperm Freezing</h4>
+            <p class="description">A process of preserving sperm for future use. It's helpful for fertility
+              preservation, donor sperm, and postponing parenthood.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"> <img src="./assets/img/icons/services/EmbryoFreezing.png" alt=""
+                style="height: 64px; width: 64px;"></div>
+            <h4 class="title">Embryo Freezing</h4>
+            <p class="description">A process where embryos are preserved at very low temperatures for future use. It's
+              often used in conjunction with IVF or other assisted reproductive technologies to preserve fertility or
+              delay pregnancy.
+            </p>
+          </div>
         </div>
-
       </div>
     </section><!-- End Services Section -->
 
@@ -469,59 +496,113 @@
             treatments.</p>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/doctors/DrAnand.webp" class="img-fluid" alt="">
+        <div class="swiper-container position-relative overflow-hidden">
+          <div class="swiper-wrapper">
+            <!-- First profile -->
+            <div class="swiper-slide d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="assets/img/doctors/DrAnand.webp" class="img-fluid w-100" alt="">
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Anand B. Patel</h4>
+                  <span>Senior Consultant Gynaecologist, IVF Specialist & Advanced Laparoscopic Surgeon</span>
+                </div>
               </div>
-              <div class="member-info">
-                <h4>Dr. Anand B. Patel</h4>
-                <span>Senior Consultant Gynaecologist, IVF Specialist & Advanced Laparoscopic Surgeon</span>
+            </div>
+            <!-- Second profile -->
+            <div class="swiper-slide swiper-slide d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="assets/img/doctors/Dr.Rajesh.webp" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                  <h4>Dr Rajesh Punjabi</h4>
+                  <span>Senior Consultant Gynaecologist & Obstetrician, Laparoscopic Surgeon & IVF Specialist</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="assets/img/doctors/DrPrerana.webp" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Prerana Shah</h4>
+                  <span>Senior Consultant Gynaecologist & Obstetrician, IVF Specialist</span>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide swiper-slide d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="assets/img/doctors/Dr.Unnati.webp" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Unnati Pandya</h4>
+                  <span>Consultant Gynaecologist & Obstetrician</span>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <!-- Third profile -->
+            <div class="swiper-slide swiper-slide d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                  <img src="assets/img/doctors/DrKirtan.webp" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Kirtan Patel</h4>
+                  <span>Consultant IVF Specialist</span>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="assets/img/doctors/Dr.Nikita.webp" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                  <h4>Dr. Nikita</h4>
+                  <span>Consultant Gynaecologist,<br> IVF Specialist</span>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <!-- Fourth profile -->
+            <div class="swiper-slide swiper-slide d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member-img">
+                  <img src="assets/img/doctors/MrYuvraj.webp" class="img-fluid" alt="">
+                </div>
+                <div class="member-info">
+                  <h4>Mr. Yuvrajsinh Thakore</h4>
+                  <span>Clinical Embryologist</span>
+                  <br>
+                  <br>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/doctors/DrPrerana.webp" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4>Dr. Prerana Shah</h4>
-                <span>Senior Consultant Gynaecologist & Obstetrician, IVF Specialist</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/doctors/DrKirtan.webp" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4>Dr. Kirtan Patel</h4>
-                <span>Consultant IVF Specialist</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/doctors/MrYuvraj.webp" class="img-fluid" alt="">
-              </div>
-              <div class="member-info">
-                <h4>Mr. Yuvrajsinh Thakore</h4>
-                <span>Clinical Embryologist</span>
-              </div>
-            </div>
-          </div>
-
+          <!-- Add Pagination -->
+          <div class="swiper-pagination position-absolute"></div>
+          <!-- Add Navigation -->
+          <!-- <div class="swiper-button-next position-absolute"></div>
+          <div class="swiper-button-prev position-absolute"></div> -->
         </div>
 
-      </div>
+
     </section><!-- End Doctors Section -->
 
 
@@ -759,74 +840,56 @@
   <!-- add button call and inquire
   change Our Services -->
   <!-- ======= Departments Section ======= -->
-  <section id="departments" class="departments">
+ 
+  <section id="counts" class="counts">
     <div class="container" data-aos="fade-up">
 
       <div class="section-title">
-        <h2 class="main-text">Our IVFs Center</h2>
+        <h2 class="main-text">Our IVF Centers</h2>
       </div>
-
-      <section id="counts" class="counts">
-        <div class="container" data-aos="fade-up">
-
-          <div class="row no-gutters justify-content-between">
-
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-              <div class="count-box">
-                <!-- <img src="./assets/img/icons/15+ years of Trust.png" alt="" style="height: 54px; width: 54px; margin-bottom: 5px;"> -->
-                <h3>Science City</h3>
-                <p>1st Floor, Sarjan Arcade,Science City Rd, above Axis Bank, Sola,Ahmedabad, Gujarat 380060
-                <p> +91 9099074235 <br>
-                  +91 9904996633 <br>
-                  +91 9879613120 </p>
-                </p>
-              </div>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="d-md-flex align-items-md-stretch">
+            <div class="jeetpatel count-box">
+              <h3>Science City</h3>
+              <p><strong>Address:</strong> 1st Floor, Sarjan Arcade, Science City Rd, above Axis Bank, Sola, Ahmedabad, Gujarat 380060</p>
+              <p>+91 9099074235 <br> +91 9904996633 <br> +91 9879613120</p>
             </div>
-
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-              <div class="count-box">
-                <!-- <img src="./assets/img/icons/Modern Infrastructure.png" alt="" style="height: 54px; width: 54px; margin-bottom: 5px;"> -->
-                <h3>Nava Vadaj</h3>
-                <p>Bus Stand, SF-210-211, Shivalik Square,
-                  132 Ft Ring Road Opp GSRTC Ranip,
-                  near Adani CNG Pump, Nava Vadaj,
-                  Ahmedabad, Gujarat 380013 </p>
-                <p>+91 97246 64488 <br>
-                  +91 84010 40551</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-              <div class="count-box">
-                <!-- <img src="./assets/img/icons/Treatment with care.png" alt="" style="height: 54px; width: 54px; margin-bottom: 5px;"> -->
-                <h3>Himmatnagar</h3>
-                <p>112, First Floor, Shivam Orbit , N.H.No.8, Motipura,near lapinoz, near safal heart
-                  hospital, Sahakari Jin,Himatnagar, Gujarat 383001
-                <p> +91 77790 67606 <br>
-                  +91 97250 82383
-                </p>
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-              <div class="count-box">
-                <!-- <img src="./assets/img/icons/Confidentiality.png" alt="" style="height: 54px; width: 54px; margin-bottom: 5px;"> -->
-                <h3>Gandhinagar</h3>
-                <p>104, First Floor, Kabir Shilp, Kudasan-Por Rd,opp. The Landmark Mall, Kudasan,Gandhinagar,
-                  Gujarat
-                  382421
-                <p>+91 77790 80309 <br>
-                  +91 97146 05552
-                </p>
-                </p>
-              </div>
-            </div>
-
           </div>
-
+    
+          <div class="d-md-flex align-items-md-stretch">
+            <div class="jeetpatel count-box">
+              <h3>Vadaj</h3>
+              <p><strong>Address:</strong> Bus Stand, SF-210-211, Shivalik Square, 132 Ft Ring Road Opp GSRTC Ranip, near Adani CNG Pump, Nava Vadaj, Ahmedabad, Gujarat 380013</p>
+              <p>+91 97246 64488 <br> +91 84010 40551</p>
+            </div>
+          </div>
+    
+          <div class="d-md-flex align-items-md-stretch">
+            <div class="jeetpatel count-box">
+              <h3>Rajkot</h3>
+              <p><strong>Address:</strong> Satnam Hospital Opp. Swamininarayan Temple Akshar Marg, Main Road, Indraprasth Nagar, Rajkot, Gujarat 360001</p>
+              <p>+0281 245 0685</p>
+            </div>
+          </div>
+    
+          <div class="d-md-flex align-items-md-stretch">
+            <div class="jeetpatel count-box">
+              <h3>Himmatnagar</h3>
+              <p><strong>Address:</strong> 112, First Floor, Shivam Orbit, N.H.No.8, Motipura, near Lapinoz, near Safal Heart Hospital, Sahakari Jin, Himatnagar, Gujarat 383001</p>
+              <p>+91 77790 67606 <br> +91 97250 82383</p>
+            </div>
+          </div>
+    
+          <div class="d-md-flex align-items-md-stretch">
+            <div class="jeetpatel count-box">
+              <h3>Gandhinagar</h3>
+              <p><strong>Address:</strong> 104, First Floor, Kabir Shilp, Kudasan-Por Rd, opp. The Landmark Mall, Kudasan, Gandhinagar, Gujarat 382421</p>
+              <p>+91 77790 80309 <br> +91 97146 05552</p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
 
     </div>
   </section>
@@ -1005,7 +1068,12 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick Slider JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>

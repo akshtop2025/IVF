@@ -843,7 +843,6 @@ section {
 .counts {
   padding-bottom: 30px;
 }
-
 .counts .count-box {
   box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -1299,7 +1298,7 @@ section {
 }
 
 .doctors .member .member-info {
-  padding: 25px 15px;
+  padding: 15px 15px;
 }
 
 .doctors .member .member-info h4 {
@@ -1819,3 +1818,95 @@ section {
 
 
 /* rgb(227, 232, 238) */
+
+
+/* Doctors slider */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center; /* Center the box within the slide */
+  align-items: center;
+}
+
+.member {
+  width: 300px; /* Fixed width */
+  height: 400px; /* Fixed height */
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  text-align: left; /* Align text to the start (left) */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content is evenly spaced vertically */
+}
+
+.member-img img {
+  /* border-radius: 50%;
+  max-width: 150px; */
+  /* margin-bottom: 15px;  */
+  /* Adds spacing between the image and the text */
+  align-self: center; /* Center the image within the box */
+}
+
+.member-info h4 {
+  /* margin-top: 15px; */
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Adds spacing between the title and the description */
+}
+
+.member-info span {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* Position the navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+/* Doctors slider */
+
+
+/* Our IVFs Center  */
+ /* Custom CSS for slider */
+ .slider-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.count-box {
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.jeetpatel{
+  height: 250px;
+}
+
+.count-box h3 {
+  margin-top: 0;
+}
+/* Our IVFs Center */
