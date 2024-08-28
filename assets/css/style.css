@@ -1904,6 +1904,7 @@ section {
 }
 .jeetpatel{
   height: 250px;
+  box-shadow: none !important;
 }
 
 .count-box h3 {
